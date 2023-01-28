@@ -1,0 +1,39 @@
+
+body{
+    margin: 0px;
+}
+.ant-menu-title-content{
+    font-size: 18px;
+}
+.header{
+    background: #117cad!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar:hover{
+    cursor: pointer;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header-menu{
+    cursor: pointer;
+}
+.ant-input-search-button{
+    background: #117cad!important;
+}
+.header-report{
+
+}
+.page{
+    box-shadow: 0px 10px 67px -10px rgba(144,144,144,0.21);
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+}
+.ant-table-content{
+    overflow-x: auto!important;
+}

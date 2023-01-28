@@ -1,0 +1,15 @@
+export interface ICounter {
+    codeCmd: null | string,
+    devEui: null| string,
+    freq: null| string,
+    gatewayId: null| string,
+    nomerShetchika: null| string,
+    obratniyPotok: null| string,
+    potreblenie: null| string,
+    rssi: null| string,
+    signal: null| string,
+    snr: null| string,
+    statusAlarm: null| string,
+    statusShetchika: null| string,
+    voltageLevel: null| string,
+}
