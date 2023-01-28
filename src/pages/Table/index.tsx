@@ -83,6 +83,11 @@ const columns: ProColumns<GithubIssueItem>[] = [
     //     width: 48,
     // },
     {
+        title: 'Дата',
+        dataIndex: 'date',
+        ellipsis: true,
+    },
+    {
         title: 'DevEui',
         dataIndex: 'devEui',
         ellipsis: true,
