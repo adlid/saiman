@@ -76,7 +76,7 @@ type GithubIssueItem = {
 
 // @ts-ignore
 // @ts-ignore
-const columns: ProColumns<GithubIssueItem>[] = [
+const columns: ProColumns<ICounter>[] = [
     // {
     //     dataIndex: 'index',
     //     valueType: 'indexBorder',
@@ -241,7 +241,7 @@ function TableCounter() {
     const actionRef = useRef<ActionType>();
     const [tableData, setTableData] = useState<ICounter[]>([])
     useEffect(()=>{
-        const ws = new W3CWebSocket('ws://10.0.10.42:9090/echo/test')
+        const ws = new W3CWebSocket('ws://89.218.1.74:8251/echo/echo')
         ws.onopen = () =>{
             console.log("webSocket connected")
         }
@@ -254,7 +254,7 @@ function TableCounter() {
         }
     },[])
     useEffect(()=>{
-        axios.get<ICounter[]>('http://10.0.10.42:56435/history').then((value)=>{
+        axios.get<ICounter[]>('http://89.218.1.74:56435/history').then((value)=>{
             setTableData(value.data)
         })
     },[])
